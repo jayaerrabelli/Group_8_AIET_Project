@@ -216,7 +216,7 @@ def generate_answer(sorted_rrf):
 
     context_str_rrf = "\n\n===\n\n".join(top_rrf_contexts)
 
-    # Construct the final prompt for the gemini-2.5-flash-lite model (renamed from 3.5-flash-lite)
+    # Construct the final prompt for the gemini-3.5-flash-lite model (renamed from 3.5-flash-lite)
     prompt = f"""You are an expert financial assistant. Use the following hybrid search context fragments to answer the question at the end.
 If you don't know the answer, say that you don't know.
 
@@ -229,7 +229,7 @@ Answer:"""
 
     # Call the model
     response = client.models.generate_content(
-        model='gemini-2.5-flash-lite',
+        model='gemini-3.5-flash-lite',
         contents=prompt
     )
     return response.text

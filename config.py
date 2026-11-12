@@ -37,11 +37,11 @@ MAX_RECORDS = {
 
 # ---- LLMs (provider, model) -------------------------------------------------
 # Defaults are the models used in the original notebooks. Override with e.g.
-#   FINANCE_MODEL=gemini-2.5-flash-lite   or   FINANCE_PROVIDER=ollama
+#   FINANCE_MODEL=gemini-3.5-flash-lite   or   FINANCE_PROVIDER=ollama
 # Providers: gemini | groq | ollama
 _DEFAULT_LLMS = {
     "biomedical": ("groq", "qwen/qwen3.8-27b"),
-    "finance": ("gemini", "gemini-2.5-flash-lite"),
+    "finance": ("gemini", "gemini-3.5-flash-lite"),
     "customer_support": ("gemini", "gemini-3.5-flash-lite"),
     "general_knowledge": ("gemini", "gemini-3.8-flash"),
 }
