@@ -35,8 +35,8 @@ app.py           Streamlit UI
 ## Setup
 
 ```bash
-git clone https://github.com/jayaerrabelli/aietproject.git
-cd aietproject
+git clone https://github.com/jayaerrabelli/Group_8_AIET_Project.git
+cd Group_8_AIET_Project
 python -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
 pip install -r requirements.txt
